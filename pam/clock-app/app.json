@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "clock-app",
+    "slug": "clock-app",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "clock-app"
+}
