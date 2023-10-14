@@ -1,0 +1,175 @@
+@use './button.scss';
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'f Funny Cat', sans-serif;
+}
+
+.catsSite-title {
+	position: fixed;
+	right: 30px;
+	top: 30px;
+	font-size: 48px;
+	text-decoration: none;
+	color: black;
+	transition: color 0.3s;
+
+	&:visited {
+		color: black;
+	}
+
+	&:link {
+		color: black;
+	}
+
+	&:hover {
+		color: rgb(140, 132, 132);
+	}
+}
+
+body {
+	height: 100vh;
+	// background: url('cat.jpg') no-repeat center center fixed ;
+}
+
+.main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100%;
+	text-align: center;
+	&__title {
+		font-size: 64px;
+	}
+
+	&__desc {
+		margin: 10px 0;
+		font-size: 23px;
+		color: rgb(115, 121, 125);
+	}
+
+	a:hover {
+		color: rgb(142, 148, 152);
+	}
+
+	&__catbox {
+		display: flex;
+		justify-content: center;
+		align-items: space-between;
+		flex-direction: column;
+		&__btn {
+			margin-top: 10px;
+			font-size: 28px;
+		}
+
+		&__imagebox {
+			border: 3px solid black;
+			border-radius: 15px;
+			background-color: #dcd3d3;
+			background-size: cover;
+			background-position: center;
+			width: 100%;
+			height: 300px;
+		}
+	}
+
+	&__factsbox {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		&__title {
+			text-align: center;
+			padding: 10px 20px;
+			font-size: 64px;
+			text-transform: uppercase;
+			cursor: pointer;
+			user-select: none;
+			transition: color 0.3s;
+
+			&:hover {
+				color: #555;
+			}
+		}
+
+		&__funfact {
+			font-size: 23px;
+			font-family: sans-serif;
+			text-align: center;
+		}
+	}
+
+	&__quizbox {
+		text-align: center;
+		&__title {
+			font-size: 64px;
+		}
+		&__quiz {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			&__element {
+				&__title {
+					font-size: 24px;
+					font-family: 'Helvetica Neue';
+				}
+
+				label {
+					font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+				}
+			}
+
+			&__btn {
+				margin-top: 10px;
+				transition: color 0.3s, background-color 0.3s;
+				&:hover {
+					color: white;
+					background-color: #666;
+				}
+			}
+
+			&__info {
+				margin-top: 10px;
+				color: rgb(204, 20, 20);
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+.footer {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	bottom: 0;
+	width: 100%;
+	height: 120px;
+	text-align: center;
+	background-color: #f6f2f2;
+	font-family: sans-serif;
+	font-size: 18px;
+	flex-direction: column;
+
+	&__box {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		font-size: 10px;
+
+		&-item {
+			margin: 7px 4px 0;
+			color: black;
+		}
+	}
+
+	&__title {
+		color: rgb(56, 53, 53);
+	}
+}

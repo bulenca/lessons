@@ -1,0 +1,20 @@
+<footer class="footer">
+  <p class="footer__title">Copyright © 2023 Cats Site</p>
+  <div class="footer__box">
+    <a href="/" class="footer__box-item">Strona główna</a>
+    <a href="/randomcat" class="footer__box-item">Losowy kotek</a>
+    <a href="/quiz" class="footer__box-item">Koci Quiz</a>
+    <a href="/videos" class="footer__box-item">Kocie filmy</a>
+    <a href="/funfacts" class="footer__box-item">Ciekawostki</a>
+    <a href="/contact" class="footer__box-item">Kontakt</a>
+  
+  </div>
+</footer>
+
+{{#if useJs}}
+  {{#each useJs}}
+    <script type="text/javascript" src="{{ this }}"></script>
+  {{/each}}
+{{/if}}
+</body>
+</html>

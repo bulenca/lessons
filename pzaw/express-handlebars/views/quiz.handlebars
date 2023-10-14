@@ -1,0 +1,22 @@
+<main class='main'>
+	<div class='main__quizbox'>
+		<p class='main__quizbox__title'>10 pytanek z Kociego Quizu!</p>
+		<div class='main__quizbox__quiz'>
+			{{#if catsQuiz}}
+				{{#each catsQuiz}}
+					<div class='main__quizbox__quiz__element' data-answer='{{this.answer}}'>
+						<p class='main__quizbox__quiz__element__title'>{{this.question}}</p>
+						<label for='answer-true-{{@index}}'>Prawda</label>
+						<input type='radio' name='quiz-answer-{{@index}}' id='answer-true-{{@index}}' class='answerTrue' />
+
+						<label for='answer-false-{{@index}}'>Fałsz</label>
+						<input type='radio' name='quiz-answer-{{@index}}' id='answer-false-{{@index}}' class='answerFalse' />
+					</div>
+				{{/each}}
+			{{/if}}
+			<p class='main__quizbox__quiz__info'></p>
+			<button class='main__quizbox__quiz__btn btn'>koniec quizu</button>
+		</div>
+
+	</div>
+</main>
