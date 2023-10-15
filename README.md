@@ -12,6 +12,8 @@
 
 ### Programowanie Aplikacji Desktopowych
 
+- [Kółko i krzyżyk w WPF](https://github.com/bulenca/lessons/tree/main/pad/TicTacToe-app)
+
 ### Programowanie Zaawansowanych Aplikacji Webowych
 
 - [Express i Handlebars](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/bulenca/lessons/tree/main/pzaw/express-handlebars)
