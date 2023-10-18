@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#333"
+    style="#000"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#111"
+        android:id="@+id/headerBox">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kalkulator Życia"
+            android:textSize="22dp"
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="#333"
+        android:padding="16dp"
+        android:id="@+id/mainBox">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Podaj swój wiek:"
+            android:textSize="22dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"/>
+
+
+        <EditText
+            android:id="@+id/editTextAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:hint="Podaj wiek" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Wybierz swoją płeć:"
+            android:textSize="22dp"
+            android:textColor="@color/white"/>
+
+        <Spinner
+            android:id="@+id/genderSpinner"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:background="#888"
+            android:padding="5dp"
+            android:textAlignment="center"
+
+                />
+
+        <Button
+            android:id="@+id/checkBtn"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Button.White"
+            android:backgroundTint="#555"
+            android:text="Sprawdź!" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="#222">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ageText"
+            android:text=""
+            android:textSize="15dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/ageInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="@color/white"/>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/restLifeBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="invisible">
+
+        <Button
+            android:id="@+id/restLifeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Button.White"
+            android:backgroundTint="#555"
+            android:text="Wybierz datę!" />
+
+        <DatePicker
+            android:id="@+id/dpResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/restLifeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/restLifeHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

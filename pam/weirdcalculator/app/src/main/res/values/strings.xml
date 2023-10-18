@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">weirdCalculator</string>
+    
+    <string-array name="Genders">
+        <item>Mężczyzna</item>
+        <item>Kobieta</item>
+    </string-array>
+</resources>
