@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "alien-form", "alien-form\alien-form.csproj", "{0E7D4D6A-D87E-487A-A48E-F4B33C615405}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E7D4D6A-D87E-487A-A48E-F4B33C615405}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E7D4D6A-D87E-487A-A48E-F4B33C615405}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E7D4D6A-D87E-487A-A48E-F4B33C615405}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E7D4D6A-D87E-487A-A48E-F4B33C615405}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F11B264C-6401-4E91-9305-27538D3E45AE}
+	EndGlobalSection
+EndGlobal
