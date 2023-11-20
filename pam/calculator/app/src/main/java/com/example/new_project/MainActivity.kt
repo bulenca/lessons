@@ -27,7 +27,10 @@ class MainActivity : AppCompatActivity() {
             possibleSymbols = textViewInput.text.toString().split("E-")[1]
         } else if (textViewInput.text.contains("E+")){
             possibleSymbols = textViewInput.text.toString().split("E+")[1]
-        } else {
+        } else if(textViewInput.text.startsWith("-")) {
+            possibleSymbols = textViewInput.text.toString().substring(1)
+        }
+        else {
             possibleSymbols = textViewInput.text.toString()
         }
         var symbol = with(possibleSymbols) {
@@ -88,9 +91,16 @@ class MainActivity : AppCompatActivity() {
 
 
 
-
+        if(textViewInput.text.startsWith("-")) {
+            dataFromTextView = textViewInput.text.toString().substring(1)
+        }
 
         var (one, two) = dataFromTextView.split(symbol)
+
+        if(textViewInput.text.startsWith("-")) {
+            one = "-${one}"
+        }
+
         if(two == ""){
             textViewInput.text = one.toString()
             return
