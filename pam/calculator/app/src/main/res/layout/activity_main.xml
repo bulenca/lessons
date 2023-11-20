@@ -33,7 +33,7 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="@string/exp"
-            android:onClick="onExp"/>
+            android:onClick="onSymbol"/>
 
         <Button
             android:layout_width="0dp"
@@ -47,7 +47,7 @@
             android:layout_weight="2"
             android:layout_height="wrap_content"
             android:text="@string/divide"
-            android:onClick="onDivide"/>
+            android:onClick="onSymbol"/>
     </LinearLayout>
 
         <LinearLayout
@@ -79,7 +79,7 @@
             android:layout_weight="2"
             android:layout_height="wrap_content"
             android:text="@string/multiply"
-            android:onClick="onMultiply"/>
+            android:onClick="onSymbol"/>
 
 
     </LinearLayout>    <LinearLayout
@@ -111,7 +111,7 @@
         android:layout_weight="2"
         android:layout_height="wrap_content"
         android:text="@string/subtract"
-        android:onClick="onSubtract"/>
+        android:onClick="onSymbol"/>
 
 
 
@@ -146,7 +146,7 @@
                 android:layout_weight="2"
                 android:layout_height="wrap_content"
                 android:text="@string/add"
-                android:onClick="onAdd"/>
+                android:onClick="onSymbol"/>
 
 
     </LinearLayout>

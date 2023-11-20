@@ -5,6 +5,9 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
+import kotlin.math.sqrt
+import kotlin.math.pow
+
 
 class MainActivity : AppCompatActivity() {
     lateinit var textViewInput : TextView
@@ -19,43 +22,95 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun checkSymbols(): String {
-        if(textViewInput.text.contains("+")) {
-            return "+"
+        var possibleSymbols : String
+        if(textViewInput.text.contains("E-")) {
+            possibleSymbols = textViewInput.text.toString().split("E-")[1]
+        } else if (textViewInput.text.contains("E+")){
+            possibleSymbols = textViewInput.text.toString().split("E+")[1]
+        } else {
+            possibleSymbols = textViewInput.text.toString()
         }
-        return ""
+        var symbol = with(possibleSymbols) {
+            when {
+                contains("+") -> "+"
+                contains("-") -> "-"
+                contains("/") -> "/"
+                contains("*") -> "*"
+                contains("^") -> "^"
+                contains("√") -> "√"
+                else -> ""
+            }
+        }
+        return symbol
     }
 
     fun onDigit(view: View){
-        textViewInput?.append((view as Button).text)
+        if(textViewInput.text.toString() == "0") {
+            textViewInput.text = ((view as Button).text)
+        } else {
+            textViewInput?.append((view as Button).text)
+        }
     }
 
     fun onClear(view: View){
         textViewInput?.text="0"
     }
 
-    fun onAdd(view: View){
-        if(!textViewInput.text.contains("+")) {
+    fun onSymbol(view: View){
+        if(checkSymbols() == "") {
             textViewInput?.append((view as Button).text)
         }
     }
 
-    fun onEqual (view: View){
+    fun onRoot(view: View){
+        if(checkSymbols() == "") {
+            var x : Double = (textViewInput.text).toString().toDouble()
+            textViewInput.text = (sqrt(x)).toString()
+        }
+    }
+
+    fun onDot(view: View){
+        if(checkSymbols() == "" && !textViewInput.text.contains(".")){
+            textViewInput?.append((view as Button).text)
+        }
+        else if (checkSymbols() != "") {
+            var dataFromTextView = textViewInput?.text.toString()
+            var (one, two) = dataFromTextView.split(checkSymbols())
+
+            if(!two.contains(".")) {
+                textViewInput?.append((view as Button).text)
+            }
+        }
+    }
+
+    fun calculate(symbol : String) {
         var dataFromTextView = textViewInput?.text.toString()
 
-        if(checkSymbols() == "+"){
-            var (one, two) = dataFromTextView.split("+")
-            if(two == ""){
-                textViewInput.text = one.toString()
-                return
-            }
-            textViewInput.text = (one.toDouble() + two.toDouble()).toString()
 
+
+
+
+        var (one, two) = dataFromTextView.split(symbol)
+        if(two == ""){
+            textViewInput.text = one.toString()
+            return
         }
 
 
+            when(symbol) {
+                "+" -> textViewInput.text = (one.toDouble() + two.toDouble()).toString()
+                "-" -> textViewInput.text = (one.toDouble() - two.toDouble()).toString()
+                "/" -> textViewInput.text = (one.toDouble() / two.toDouble()).toString()
+                "*" -> textViewInput.text = (one.toDouble() * two.toDouble()).toString()
+                "^" -> textViewInput.text = (one.toDouble().pow(two.toDouble())).toString()
 
 
+                else -> ""
+            }
+        }
 
-        // toDouble()
+
+    fun onEqual (view: View){
+        calculate(checkSymbols())
     }
 }

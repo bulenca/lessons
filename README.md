@@ -10,6 +10,7 @@
 - [Aplikacja z Nawigatorami](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/bulenca/lessons/tree/main/pam/app-navigators)
 - [Zegarek Mobilny](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/bulenca/lessons/tree/main/pam/clock-app)
 - [Dziwny kalkulator](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/bulenca/lessons/tree/main/pam/weirdcalculator)
+- [Kalkulator](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/bulenca/lessons/tree/main/pam/calculator)
 
 ### Programowanie Aplikacji Desktopowych
 

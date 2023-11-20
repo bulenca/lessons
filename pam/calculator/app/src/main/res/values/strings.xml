@@ -15,8 +15,8 @@
     <string name="add">+</string>
     <string name="subtract">-</string>
     <string name="equal">=</string>
-    <string name="multiply">X</string>
-    <string name="divide">÷</string>
+    <string name="multiply">*</string>
+    <string name="divide">/</string>
     <string name="exp">^</string>
     <string name="root">√</string>
 </resources>
