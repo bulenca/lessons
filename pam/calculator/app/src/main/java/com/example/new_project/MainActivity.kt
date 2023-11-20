@@ -7,7 +7,7 @@ import android.widget.Button
 import android.widget.TextView
 import kotlin.math.sqrt
 import kotlin.math.pow
-
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
     lateinit var textViewInput : TextView
@@ -100,7 +100,15 @@ class MainActivity : AppCompatActivity() {
             when(symbol) {
                 "+" -> textViewInput.text = (one.toDouble() + two.toDouble()).toString()
                 "-" -> textViewInput.text = (one.toDouble() - two.toDouble()).toString()
-                "/" -> textViewInput.text = (one.toDouble() / two.toDouble()).toString()
+                "/" -> {
+                    if(two == "0"){
+                        Toast.makeText(applicationContext,"NIE MOŻNA DZIELIC PRZEZ ZERO",Toast.LENGTH_LONG).show()
+                        textViewInput.text = (one.toDouble()).toString()
+                    } else {
+                        textViewInput.text = (one.toDouble() / two.toDouble()).toString()
+
+                    }
+                }
                 "*" -> textViewInput.text = (one.toDouble() * two.toDouble()).toString()
                 "^" -> textViewInput.text = (one.toDouble().pow(two.toDouble())).toString()
 
