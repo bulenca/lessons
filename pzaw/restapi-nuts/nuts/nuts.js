@@ -25,7 +25,9 @@ const addNut = nutData => {
 	return getNut(nutData.id)
 }
 const updateNut = (id, nutData) => {
-	const foundNut = nuts.find(nut => nut.id == id)
+	const foundNut = findNutById(id)
+	if (foundNut == 'No nut found') return foundNut
+
 	for (let key in nutData) {
 		foundNut[key] = nutData[key]
 	}
