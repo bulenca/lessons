@@ -1,0 +1,66 @@
+[
+    {
+        "id": 2,
+        "nazwa": "Orzech laskowy",
+        "rodzaj": "Miękkie orzechy",
+        "kolor": "Brązowy",
+        "smak": "Słodki, lekko gorzki",
+        "zastosowanie": "Desery, pieczywo"
+    },
+    {
+        "id": 4,
+        "nazwa": "Orzech makadamia",
+        "rodzaj": "Twarde orzechy",
+        "kolor": "Biały",
+        "smak": "Delikatny, kremowy",
+        "zastosowanie": "Ciastka, sałatki"
+    },
+    {
+        "id": 5,
+        "nazwa": "Orzech brazylijski",
+        "rodzaj": "Twarde orzechy",
+        "kolor": "Biały",
+        "smak": "Słodki, kremowy",
+        "zastosowanie": "Przekąska, sosy"
+    },
+    {
+        "id": 6,
+        "nazwa": "Orzech migdałowy",
+        "rodzaj": "Miękkie orzechy",
+        "kolor": "Beżowy",
+        "smak": "Słodki, lekko gorzki",
+        "zastosowanie": "Desery, mleko migdałowe"
+    },
+    {
+        "id": 7,
+        "nazwa": "Orzech pekan",
+        "rodzaj": "Twarde orzechy",
+        "kolor": "Brązowy",
+        "smak": "Słodki, aromatyczny",
+        "zastosowanie": "Ciasta, desery"
+    },
+    {
+        "id": 8,
+        "nazwa": "Orzech pistacjowy",
+        "rodzaj": "Twarde orzechy",
+        "kolor": "Zielony",
+        "smak": "Słodki, lekko słony",
+        "zastosowanie": "Lody, ciasta"
+    },
+    {
+        "id": 9,
+        "nazwa": "Orzech ziemny (orzeszki ziemne)",
+        "rodzaj": "Strączki",
+        "kolor": "Brązowy",
+        "smak": "Słony, chrupiący",
+        "zastosowanie": "Przekąska, masło orzechowe"
+    },
+    {
+        "id": 3,
+        "nazwa": "Orzech jakiś",
+        "rodzaj": "Miękkie orzechy",
+        "kolor": "Żółty",
+        "smak": "Słodki, delikatny",
+        "zastosowanie": "Sałatki, kuchnia azjatycka"
+    }
+]

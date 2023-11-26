@@ -19,9 +19,10 @@ class MainActivity : AppCompatActivity() {
 
         textViewInput = findViewById(R.id.textViewInput)
 
+
     }
 
-    fun checkSymbols(): String {
+    fun checkSymbols() : String {
         var possibleSymbols : String
         if(textViewInput.text.contains("E-")) {
             possibleSymbols = textViewInput.text.toString().split("E-")[1]
@@ -130,5 +131,6 @@ class MainActivity : AppCompatActivity() {
 
     fun onEqual (view: View){
         calculate(checkSymbols())
+
     }
 }
